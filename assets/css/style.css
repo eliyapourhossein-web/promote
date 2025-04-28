@@ -1,0 +1,366 @@
+main {
+    >header {
+        background-color: rgba(255, 255, 255, 0.448);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid darkgray;
+
+        >a {
+            >img {
+                width: 350px;
+                height: 80px;
+                object-fit: cover;
+                
+            }
+        }
+
+        >span {
+            >i {
+                font-size: 26px;
+                cursor: pointer;
+            }
+        }
+
+        >ul {
+            display: none;
+            font-size: 20px;
+            cursor: alias; 
+        }
+    }
+
+    >ul {
+        width: 0;
+        height: 400px;
+        color: black;
+        transition: 1s;
+        list-style: none;
+        /* overflow: hidden; */
+        
+        >li {
+            margin-bottom: 30px;
+        }
+        cursor: alias;
+        
+        
+        >li {
+            padding: 15px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+body {
+    transition: .4s;
+}
+
+.darkmode {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+.btn {
+    background-color: black;
+}
+
+.darkmode .btn {
+    background-color:#92c4d5;
+}
+
+
+.part1 {
+
+ background-image: url(../img/promote_slider-2\ \(2\).jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+
+
+
+
+        .h1 {
+            font-size: 70px;
+        }
+
+        .h2 {
+            font-size: 35px;
+        }
+
+        .a {
+                 text-decoration: none;
+                 color: rgb(202, 201, 201);
+                 border: 1px solid rgb(202, 201, 201);
+                 padding: 5px 30px;
+                 font-size: 17px;
+                 width: 180px;
+                 height: 100px;
+                 transition: 1s;
+
+                 &:hover {
+                    background-color: #92c4d5;
+                    border: 1px solid rgb(183, 183, 183);
+                 }
+        }
+}
+
+.h11 {
+    color: rgb(53, 52, 52);
+    font-size: 47px;
+}
+
+.p1 {
+    color: gray;
+    font-size: 27px;
+}
+
+.img1 {
+    margin-top: 100px;
+}
+
+.p111 {
+    font-size:17px;
+    margin: 70px 0 20px 110px;
+    color: gray;
+    line-height: 30px;
+}
+
+
+.b1 {
+    width:100%;
+    height: 60px;
+    text-decoration: none;
+    background-color:#92c4d5;
+    color: rgb(202, 201, 201);
+    border: 1px solid rgb(202, 201, 201);
+    padding: 5px 30px;
+    font-size: 17px;
+    transition: 1s;
+    margin-left: 120px;
+    margin: auto;
+
+    &:hover {
+       background-color: rgb(49, 102, 161);
+       border: 1px solid rgb(183, 183, 183);
+       color: beige;
+    }
+}
+
+.img2 {
+   >img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+   }
+}
+
+.part4 {
+
+    background-image: url(../img/promote_feature_7.jpg);
+           width: 100%;
+           height: 400px;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+   
+   
+   
+   
+           .h1111 {
+               font-size: 50px;
+               margin-top: 55px;
+           }
+   
+           .b2 {
+            width:200px;
+            height: 60px;
+            text-decoration: none;
+            background-color: #92c4d5;
+            color: rgb(202, 201, 201);
+            border: 1px solid rgb(202, 201, 201);
+            padding: 5px 30px;
+            font-size: 17px;
+            transition: 1s;
+            margin-left: 120px;
+            margin: auto;
+        
+            &:hover {
+               background-color: rgb(49, 102, 161);
+               border: 1px solid rgb(183, 183, 183);
+               color: beige;
+            }
+        }
+   }
+
+   .h111 {
+    margin-top: 50px;
+    margin-left: 40px;
+    color: rgb(53, 52, 52);
+    font-size: 47px;
+
+   }
+
+   .p11 {
+    margin-left: 40px;
+    color: gray;
+    font-size: 27px;
+   }
+
+   .pp1 {
+    width: 200px;
+
+   }
+
+   .fot {
+    background-color: #92c4d5;
+    width: 100%;
+    height: 80px;
+   }
+
+
+
+ .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 38, 38);
+    height: 40px;
+    color: #92c4d5;
+ }
+
+
+
+   
+
+    .swiper {
+      width: 50%;
+      height: 50%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+   @media screen and (min-width: 768px) {
+    main {
+        >header {
+            justify-content: space-around;
+    
+            >ul {
+                display: flex;
+                gap: 30px;
+                list-style: none;
+            }
+    
+            >span {
+                display: none;
+            }
+        }
+    
+        >.list {
+            display: none;
+        }
+    }
+
+
+
+@media screen and (min-width: 768px) {
+       
+        .part2 {
+
+            >div {
+
+
+                 >h1 {
+                        font-size: 70px;
+                    \}
+            }
+            
+        }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    main {
+        
+        .part4 {
+
+            height: 650px;
+            width: 100%;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+   
+            
+            >div {
+                >div {
+                    padding: 100px;
+                }
+            }
+
+            
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+        
+        .part6 {
+
+   
+            >figure {
+                
+                    margin-left: 170px;
+                    margin-top: 50px;
+            }
+
+            
+        }
+
+
+
+
+
+}
+
